@@ -1,38 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.Formulario h1,
+p {
+  display: flex; /* Display pai de todos */
+  justify-content: center;
+  align-content: center;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background: #f0f2f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Formulario {
+  /*DIV  */
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 20px 20px;
+}
+.Formulario label {
+  font-weight: 700;
+  color: #575757;
+  padding: 10px 5px;
+}
+
+.Formulario input {
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid #575757;
+  padding-left: 10px;
+}
+
+.Formulario button {
+  margin-top: 10px;
+  padding: 10px 5px;
+  border-radius: 7px;
+  border: 0;
+  background: #2637d1;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0px 1px 5px 3px #4050dd;
+  width: 60%;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+.Formulario button:hover {
+  background: #4052f7;
+}
+
+.Formulario h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 41px;
+  color: #575757;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.Planetas {
+  /*DIV  */
+  background: rgb(255, 255, 255);
+  width: 50%;
+}
+
+.HeaderDiv {
+  background: #4050dd;
+  padding: 5%;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.HeaderDiv h3,
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.HeaderDiv h3 {
+  font-weight: 300;
+  padding: 5px;
+  font-size: 22px;
+}
+
+.HeaderDiv h2 {
+  font-weight: 700;
+}
+
+.Planetas form {
+  height: 200px;
+}
+
+.info {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.out {
+  padding: 3px;
+  font-weight: 700;
+}
+
+ul {
+  margin-left: 25px;
+  margin-top: 15px;
+  list-style: none;
+  line-height: 30px;
+}
+
+.backgroundPlanet {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50%;
+  background: black;
+}
+
+.backgroundForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: white;
+}
+
+.backgroundPlanet button {
+  margin-top: 10px;
+  padding: 5px 5px;
+  border-radius: 7px;
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+  font-size: 20px;
   color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0px 1px 5px 3px #4050dd;
+  width: 20%;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.backgroundPlanet button:hover {
+  color: black;
+  background: white;
 }
